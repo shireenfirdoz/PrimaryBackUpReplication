@@ -8,8 +8,12 @@ machine replication log is a vector of MapOp. Have used the starter code for imp
 the assignment. For second point of the assignment I have created another stub to communicate with
 the replicas and copy the log from primary to replicas
 
-How To Run : 
+How To Run : running client machine along with 1 primary and 2 backup server :
+
 ./server 12345 0 2 1 10.200.125.60 12345 2 10.200.125.59 12345
+
 ./server 12345 1 2 0 10.200.125.61 12345 2 10.200.125.59 12345
+
 ./server 12345 2 2 0 10.200.125.61 12345 1 10.200.125.60 12345
+
 ./client 10.200.125.61 12345 2 5 1
