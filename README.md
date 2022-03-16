@@ -7,7 +7,9 @@ struct which contains the opcode, customer id (arg1), and parameter for the oper
 machine replication log is a vector of MapOp.I have created another stub to communicate with
 the replicas and copy the log from primary to replicas
 
-How To Run : running client machine along with 1 primary and 2 backup server :
+# How To Run : 
+
+running client machine along with 1 primary and 2 backup server :
 
 ./server 12345 0 2 1 10.200.125.60 12345 2 10.200.125.59 12345
 
